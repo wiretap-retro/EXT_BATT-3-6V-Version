@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "EXT_BATT for 3V and 6V Lithium Cells"
+Date "2022-09-22"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:MAX40200AUK+T IC1
+U 1 1 632C45A6
+P 4950 4050
+F 0 "IC1" H 5400 4300 50  0000 L CNN
+F 1 "MAX40200AUK+T" H 5150 4200 50  0000 L CNN
+F 2 "SOT95P280X145-5N" H 5800 4150 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf" H 5800 4050 50  0001 L CNN
+F 4 "OR Controller Source Selector Switch P-Channel 1:1 SOT-23-5" H 5800 3950 50  0001 L CNN "Description"
+F 5 "1.45" H 5800 3850 50  0001 L CNN "Height"
+F 6 "700-MAX40200AUK+T" H 5800 3750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX40200AUK%2bT?qs=5aG0NVq1C4yORXmgClGWGQ%3D%3D" H 5800 3650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 5800 3550 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX40200AUK+T" H 5800 3450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 632C5F7A
+P 5550 2850
+F 0 "J1" H 5630 2842 50  0000 L CNN
+F 1 "Conn_01x04" H 5630 2751 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 5550 2850 50  0001 C CNN
+F 3 "~" H 5550 2850 50  0001 C CNN
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:2894 H1
+U 1 1 632CB7DA
+P 7950 2850
+F 0 "H1" H 8678 2796 50  0000 L CNN
+F 1 "2894" H 8678 2705 50  0000 L CNN
+F 2 "2894" H 8700 2950 50  0001 L CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=14467" H 8700 2850 50  0001 L CNN
+F 4 "Coin Cell Battery Holders CR1220 COIN CELL SMT RETAINER" H 8700 2750 50  0001 L CNN "Description"
+F 5 "2.42" H 8700 2650 50  0001 L CNN "Height"
+F 6 "534-2894" H 8700 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2894?qs=u16ybLDytRb94n%2F3dXyVLQ%3D%3D" H 8700 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Keystone Electronics" H 8700 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "2894" H 8700 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:2894 H2
+U 1 1 632CBEB0
+P 7950 3750
+F 0 "H2" H 8678 3696 50  0000 L CNN
+F 1 "2894" H 8678 3605 50  0000 L CNN
+F 2 "2894" H 8700 3850 50  0001 L CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=14467" H 8700 3750 50  0001 L CNN
+F 4 "Coin Cell Battery Holders CR1220 COIN CELL SMT RETAINER" H 8700 3650 50  0001 L CNN "Description"
+F 5 "2.42" H 8700 3550 50  0001 L CNN "Height"
+F 6 "534-2894" H 8700 3450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2894?qs=u16ybLDytRb94n%2F3dXyVLQ%3D%3D" H 8700 3350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Keystone Electronics" H 8700 3250 50  0001 L CNN "Manufacturer_Name"
+F 9 "2894" H 8700 3150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2850 7800 2850
+$Comp
+L power:+BATT #PWR0101
+U 1 1 632CECBB
+P 7650 2650
+F 0 "#PWR0101" H 7650 2500 50  0001 C CNN
+F 1 "+BATT" H 7665 2823 50  0000 C CNN
+F 2 "" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2850 7650 2650
+Wire Wire Line
+	7950 3850 7650 3850
+Wire Wire Line
+	7650 3850 7650 4050
+$Comp
+L power:GND #PWR0102
+U 1 1 632D3761
+P 7650 4050
+F 0 "#PWR0102" H 7650 3800 50  0001 C CNN
+F 1 "GND" H 7655 3877 50  0000 C CNN
+F 2 "" H 7650 4050 50  0001 C CNN
+F 3 "" H 7650 4050 50  0001 C CNN
+	1    7650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0103
+U 1 1 632D6642
+P 4650 3950
+F 0 "#PWR0103" H 4650 3800 50  0001 C CNN
+F 1 "+BATT" H 4665 4123 50  0000 C CNN
+F 2 "" H 4650 3950 50  0001 C CNN
+F 3 "" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3950 4650 4050
+Wire Wire Line
+	4650 4050 4950 4050
+Wire Wire Line
+	4950 4250 4650 4250
+Wire Wire Line
+	4650 4250 4650 4050
+Connection ~ 4650 4050
+Wire Wire Line
+	4950 4150 4800 4150
+Wire Wire Line
+	4800 4150 4800 4350
+$Comp
+L power:GND #PWR0104
+U 1 1 632D6FE1
+P 4800 4350
+F 0 "#PWR0104" H 4800 4100 50  0001 C CNN
+F 1 "GND" H 4805 4177 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5950 4050
+$Comp
+L power:VDD #PWR0105
+U 1 1 632D7409
+P 6200 3950
+F 0 "#PWR0105" H 6200 3800 50  0001 C CNN
+F 1 "VDD" H 6215 4123 50  0000 C CNN
+F 2 "" H 6200 3950 50  0001 C CNN
+F 3 "" H 6200 3950 50  0001 C CNN
+	1    6200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4150 6200 4150
+Wire Wire Line
+	6200 4150 6200 3950
+NoConn ~ 5350 2850
+NoConn ~ 5350 2950
+$Comp
+L power:VDD #PWR0106
+U 1 1 632D8ED0
+P 5150 2650
+F 0 "#PWR0106" H 5150 2500 50  0001 C CNN
+F 1 "VDD" H 5165 2823 50  0000 C CNN
+F 2 "" H 5150 2650 50  0001 C CNN
+F 3 "" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 632D9DE6
+P 5150 3150
+F 0 "#PWR0107" H 5150 2900 50  0001 C CNN
+F 1 "GND" H 5155 2977 50  0000 C CNN
+F 2 "" H 5150 3150 50  0001 C CNN
+F 3 "" H 5150 3150 50  0001 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3050 5150 3050
+Wire Wire Line
+	5150 3050 5150 3150
+Wire Wire Line
+	5350 2750 5150 2750
+Wire Wire Line
+	5150 2750 5150 2650
+Wire Wire Line
+	7950 3750 7800 3750
+Wire Wire Line
+	7650 2950 7950 2950
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 632DD7B4
+P 8150 3350
+F 0 "J2" H 8230 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 8230 3251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8150 3350 50  0001 C CNN
+F 3 "~" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2950 7650 3350
+Wire Wire Line
+	7650 3350 7950 3350
+Wire Wire Line
+	7650 3750 7650 3450
+Wire Wire Line
+	7650 3450 7950 3450
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 632E2523
+P 7150 3450
+F 0 "J3" H 7300 3350 50  0000 C CNN
+F 1 "Conn_01x02" H 7450 3450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 3450 50  0001 C CNN
+F 3 "~" H 7150 3450 50  0001 C CNN
+	1    7150 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 2950 7350 2950
+Wire Wire Line
+	7350 2950 7350 3350
+Connection ~ 7650 2950
+$Comp
+L power:GND #PWR0108
+U 1 1 632E3B45
+P 7350 4050
+F 0 "#PWR0108" H 7350 3800 50  0001 C CNN
+F 1 "GND" H 7355 3877 50  0000 C CNN
+F 2 "" H 7350 4050 50  0001 C CNN
+F 3 "" H 7350 4050 50  0001 C CNN
+	1    7350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3450 7350 4050
+Text Notes 7900 4600 0    50   ~ 0
+J2      J3\nSHORT  OPEN   = 6V\nOPEN   SHORT  = 3V\nSHORT  SHORT  = Smoke\nOPEN   OPEN   = Nothing
+Wire Wire Line
+	7950 3050 7800 3050
+Wire Wire Line
+	7800 3050 7800 2850
+Connection ~ 7800 2850
+Wire Wire Line
+	7800 2850 7950 2850
+Wire Wire Line
+	7950 3950 7800 3950
+Wire Wire Line
+	7800 3950 7800 3750
+Connection ~ 7800 3750
+Wire Wire Line
+	7800 3750 7650 3750
+Wire Notes Line
+	4400 2250 9000 2250
+Wire Notes Line
+	9000 2250 9000 4650
+Wire Notes Line
+	9000 4650 4400 4650
+Wire Notes Line
+	4400 4650 4400 2250
+Wire Notes Line
+	6450 2250 6450 4650
+Wire Notes Line
+	6450 3500 4400 3500
+Text Notes 5750 2350 0    50   ~ 0
+Power Connector
+Text Notes 5950 3600 0    50   ~ 0
+Ideal Diode
+Text Notes 6800 2350 0    50   ~ 0
+2x CR1220 Lithium Battery Holders (3V / 6V)
+Text Notes 7050 7050 0    50   ~ 0
+An external battery for replacing the typical Varta on 386/486 motherboards.\nMotherboard must have the 4-pin header for EXT_BATT.\nRefer to your motherboard manual. Most manuals have a statement for the\nEXT_BATT connector input requirement being between 3.6VDC and 4.5VDC,\nsometimes 6VDC. This board gives a 3V and 6V option. Many users report a\nsingle 3V lithium cell works just fine.
+Wire Notes Line
+	9000 4150 7850 4150
+Wire Notes Line
+	7850 4150 7850 4650
+$EndSCHEMATC
