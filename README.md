@@ -28,7 +28,10 @@ I have quite a few 386 and 486 motherboards that have an EXT_BATT header, but I'
 | SHORT | SHORT | Smoke |
 | OPEN  | OPEN  | Nothing |
 
-For 3V, populate the rear battery only. For 6V, populate both batteries. Negative battery terminal faces the PCB.
+For 3V, populate the rear battery only. For 6V, populate both batteries. The negative battery terminal faces the PCB.
+\
+\
+3V may work for your board, as there are many people that report a single 3V lithium cell is able to power their RTC. Of course, it depends on the minimum input voltage rating for the RTC chip. YMMV..
 
 ## Installation
 Set the jumper and plug the completed board into the EXT_BATT header. Several motherboards also use an INTERNAL/EXTERNAL jumper to select between the factory installed battery and the EXT_BATT header.
