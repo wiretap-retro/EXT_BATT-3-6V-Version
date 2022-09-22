@@ -17,7 +17,7 @@ I have quite a few 386 and 486 motherboards that have an EXT_BATT header, but I'
 * 1x04 2.54mm pitch right angle pin socket, or 1x04 2.54mm pitch straight pin socket, or 1x04 2.54mm male pin headers (see below for mounting orientations)
 * (2) 1x02 2.54mm pitch straight pin headers
 * (1) 1x02 2.54mm pitch jumper
-* 2x CR1220 batteries
+* 1-2x CR1220 batteries
 
 ## Jumper Settings
 
