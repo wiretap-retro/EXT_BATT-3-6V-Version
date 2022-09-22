@@ -31,7 +31,8 @@ I have quite a few 386 and 486 motherboards that have an EXT_BATT header, but I'
 For 3V, populate the rear battery only. For 6V, populate both batteries. Negative battery terminal faces the PCB.
 
 ## Installation
-Plug the completed board into the EXT_BATT header. Several motherboards also use an INTERNAL/EXTERNAL jumper to select between the factory installed battery and the EXT_BATT header.
+Set the jumper and plug the completed board into the EXT_BATT header. Several motherboards also use an INTERNAL/EXTERNAL jumper to select between the factory installed battery and the EXT_BATT header.
+\
 \
 Mounting orientations:
 * Vertical - this PCB sits about 36mm tall when installed vertically. 
