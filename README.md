@@ -13,9 +13,10 @@ I have quite a few 386 and 486 motherboards that have an EXT_BATT header, but I'
 ## BOM
 * This circuit board, ordered from your fabricator of choice. (JLCPCB, PCBway, OSH Park, etc.)
 * Maxim MAX40200AUK+T Ideal Diode
-* 2x Keystone Electronics 2894 battery holder
+* 2x Keystone Electronics 2894 battery holders
 * 1x04 2.54mm pitch right angle pin socket, or 1x04 2.54mm pitch straight pin socket, or 1x04 2.54mm male pin headers (see below for mounting orientations)
 * (2) 1x02 2.54mm pitch straight pin headers
+* (1) 1x02 2.54mm pitch jumper
 * 2x CR1220 batteries
 
 ## Jumper Settings
